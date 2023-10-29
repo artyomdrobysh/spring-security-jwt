@@ -1,0 +1,25 @@
+### Sign In by admin
+POST http://localhost:8080/auth/sign-in
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "1234"
+}
+
+### Sign In by john
+POST http://localhost:8080/auth/sign-in
+Content-Type: application/json
+
+{
+  "username": "john",
+  "password": "1111"
+}
+
+### Allowed authenticated users
+GET http://localhost:8080/authenticated-users
+Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW4iLCJleHAiOjE2OTg2MDA3OTksImlhdCI6MTY5ODU5NzE5OSwic2NvcGUiOiJVU0VSIEFETUlOIn0.VU0d3PqazJGietNpgfjhpJVxliD7rFrNfoKTHtOkTtAkNX8dqUvQ8T_NEZ76rjL-2ethiF0gsP5i80D1OL6-sZZWngLq_v0IrtDkHEqoSCJbAI2EOKXT1wDhT0mfFCT2zEeDEKAMy5NCrtjD6fzw3_AAFmfH7f82FJMzA43l63H28_QiZEyLlFhn2hEkXG-mYCSu7YbHRV2FyFVUbBCDcSQTmqpmFNUpN3kdIrt_yr7eVt08qxGa9_bpl9eDmo-K_1tvT7390mbKMMHRtdntJxygBU2pCaTB1uhASsLc9Oh84Oc45A0xeieJKmhMKZB5vGZnqjWYK1fmX803cefy3g
+
+### Allowed admins
+GET http://localhost:8080/admins
+Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiam9obiIsImV4cCI6MTY5ODYwMDkyNywiaWF0IjoxNjk4NTk3MzI3LCJzY29wZSI6IlVTRVIifQ.KVChYWb-3twhd4TeHoWm2xoyQOINwVly62_9Fy-z2yidmp5tn-5UKwNPOtj3_m2hWCwdBju8iKW0_w-sMO9WS909UqDLzP02fQBh1OiqT-gx_y67IRq9M5yFEPcbVeDCRRMwAh34QEcl4krrJxAswsy4im0AB-wepcXJFLvgsjToxVdpOzLziUE9sl8gx2lxqbFmRRDifrX6Ftep5nqLek5wjhuNDbqVoTdcmo_SVnAoBT2fumSb5zJUK_Jsuw_sQfLl5fgXzI3R91YCvyDJJHjPThkW3-EHKSB-fdHZh4sFridjJAVbit9XsZImaEe1xkdAB_1Kdk47Y8KFW5J9xg
