@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    open-in-view: false
+
+logging:
+  file:
+    name: logs/app.log
+  logback:
+    rollingpolicy:
+      max-file-size: 5MB
+  level:
+    root: info
